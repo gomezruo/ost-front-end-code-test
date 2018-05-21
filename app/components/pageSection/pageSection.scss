@@ -1,0 +1,9 @@
+.page-section {
+  display: inline-block;
+  margin: 30px;
+  max-width: 600px;
+
+  &__heading {
+    font-family: serif;
+  }
+}

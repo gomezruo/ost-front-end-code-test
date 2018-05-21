@@ -1,9 +1,12 @@
-.page-section {
+.section {
   display: inline-block;
   margin: 30px;
   max-width: 600px;
 
-  &__heading {
-    font-family: serif;
+  &Heading {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }

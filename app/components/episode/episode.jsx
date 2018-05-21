@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {getEpisode} from '../../utils/contents';
 
-import './episode.scss';
+import styles from './episode.scss';
 
 class Episode extends Component {
   constructor(props) {
@@ -34,8 +34,8 @@ class Episode extends Component {
     const {title} = this.state;
 
     return (
-      <div className="episode">
-        <h4 className="episode__title">{title}</h4>
+      <div className={styles.episode}>
+        <h4 className={styles.episodeTitle}>{title}</h4>
       </div>
     );
   }

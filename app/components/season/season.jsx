@@ -5,7 +5,7 @@ import {getSeason} from '../../utils/contents';
 
 import {Episode} from '../episode/episode';
 
-import './season.scss';
+import styles from './season.scss';
 
 class Season extends Component {
   constructor(props) {
@@ -38,8 +38,8 @@ class Season extends Component {
     const {title, image, year, episodes} = this.state;
 
     return (
-      <div className="season">
-        <h3 className="season__title">{title} <span>{year}</span></h3>
+      <div className={styles.season}>
+        <h3 className={styles.seasonTitle}>{title} <span className={styles.seasonYear}>{year}</span></h3>
         { episodes.map((item, i) => <Episode url={item} key={i} />) }
       </div>
     );

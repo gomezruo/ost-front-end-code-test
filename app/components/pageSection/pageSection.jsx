@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-import './pageSection.scss';
+import styles from './pageSection.scss';
 
 class PageSection extends Component {
   constructor() {
@@ -12,9 +12,9 @@ class PageSection extends Component {
     const {children, heading} = this.props;
 
     return (
-      <div className="page-section">
-        <h2 className="page-section__heading">{ heading }</h2>
-        <div className="page-section__content">{ children }</div>
+      <div className={styles.section}>
+        <h2 className={styles.sectionHeading}>{ heading }</h2>
+        <div className={styles.sectionContent}>{ children }</div>
       </div>
     );
   }

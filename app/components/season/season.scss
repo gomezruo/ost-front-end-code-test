@@ -1,3 +1,21 @@
-.show-list {
+.season {
 
+  &Title {
+    font-size: 34px;
+    font-family: serif;
+    font-weight: 100;
+  }
+
+  &Year {
+    display: inline-block;
+    width: 38px;
+    line-height: 38px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #fff;
+    background-color: #80c080;
+    border-radius: 50%;
+  }
 }
